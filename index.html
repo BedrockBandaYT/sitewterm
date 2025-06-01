@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Terminal</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Online Terminal</h1>
+    <div id="theme-toggle">
+        <button id="toggle-button">Switch to Classic Theme</button>
+    </div>
+    <div id="login-form">
+        <select id="protocol">
+            <option value="ssh">SSH</option>
+            <option value="sftp">SFTP</option>
+            <option value="ftp">FTP</option>
+            <option value="telnet">Telnet</option>
+        </select>
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+        <input type="text" id="host" placeholder="Host" />
+        <input type="number" id="port" placeholder="Port" value="22" />
+        <input type="text" id="command" placeholder="Command" />
+        <button id="login-button">Connect</button>
+    </div>
+    <div id="terminal" class="hacker-terminal" style="display:none;"></div>
+    <input type="text" id="input" placeholder="Enter command..." autofocus style="display:none;" />
+    <script src="main.js"></script>
+</body>
+</html>
